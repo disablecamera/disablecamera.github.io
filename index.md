@@ -13,12 +13,12 @@ etc.), this app lets you disable the camera in a way that **cannot be reversed,
 not even by you**. See the [FAQ](/faq) for more information.
 
 The app will disable your camera (for all apps), but you'll need to take some
-additional manual steps (including setting up some Android developer tools) to
-*permanently* disable it. Just follow the instructions below.
+additional manual steps to *permanently* disable it. Just follow the
+instructions below.
 
 # What you'll need
 
-* An Android phone running Android 5.0 (Lollipop) or later.
+* An Android phone or tablet running Android 5.0 (Lollipop) or later.
 * A computer where you can install the Android developer tools.
 * A USB cable to plug your Android device into your computer.
 
@@ -32,7 +32,7 @@ app on the Play Store. Once the app is installed, follow the on-screen steps:
 2. Tap the "Disable camera" button. This uses the granted permissions to disable
    the camera.
 
-At this point, the camera on your phone will be disabled for all apps. However,
+At this point, the camera on your device will be disabled for all apps. However,
 you are still able to re-enable the camera by revoking the permissions you
 granted and uninstalling the app. If you want to "freeze" the app so that it is
 permanently installed (so that the camera is permanently disabled), then
@@ -40,13 +40,14 @@ continue with these instructions.
 
 # 2. Enable USB debugging on your Android device
 
-This configures your phone to allow you to send commands to it.
+This configures your Android device to allow you to send commands to it.
 
 In the Settings app:
 
 1. Enable the "Developer options" menu (if you haven't done so) by going to the
-   "About phone" menu, scrolling to the bottom, and tapping "Build number" 7
-   times. A message will appear saying that you are now a developer.
+   "About phone" (or "About tablet") menu, scrolling to the bottom, and tapping
+   "Build number" 7 times. A message will appear saying that you are now a
+   developer.
 2. In the "Developer options" menu, go to the "USB debugging" option and enable
    it.
 
@@ -70,9 +71,9 @@ There are also alternative ways that may be simpler, like in these explanations:
 * [Windows setup YouTube video](https://www.youtube.com/watch?v=0ccUcPR2Mko)
 * [Mac/Linux setup YouTube video](https://www.youtube.com/watch?v=5J-UKA87s_o)
 
-When ADB is set up, plug your phone into your computer and run the `adb devices`
-command from a command line. If everything was successful, you'll see something
-like this:
+When ADB is set up, plug your Android device into your computer and run the
+`adb devices` command from a command line. If everything was successful, you'll
+see something like this:
 
 ~~~
 $ adb devices
@@ -87,22 +88,31 @@ sure USB debugging from step 2 is enabled and that your device is connected.
 Installing ADB is a common task, so if you run into trouble you should be able
 to find help on the internet.
 
-## 4. Temporarily remove all Google accounts from your Android device
+## 4. Temporarily remove all accounts from your Android device
 
 Now that ADB is set up, you'll use it to set the Permanently Disable Camera app
 as a "device owner" so it can't be uninstalled. But doing so requires that your
-Android device not have any Google accounts associated with it, so you'll need
-to remove them first.
+Android device not have any accounts associated with it (most notably Google
+accounts, but also other accounts like Facebook and Twitter that are registered
+as accounts on the device), so you'll need to remove them for now.
 
-In the Settings app, go to the "Accounts" menu. For each Google account, tap the
-menu button in the top right and tap "Remove account". It will display a warning
-that all messages, contacts, and other data will be deleted from the phone. This
-is generally not a big deal; any messages, contacts, etc will be re-added when
-you add the account back in the last step, so you most likely won't lose any
-data.
+In the Settings app, go to the "Accounts" menu. For each account, tap the menu
+button in the top right and tap "Remove account". It will display a warning that
+all messages, contacts, and other data will be deleted from the device. This is
+generally not a big deal; any messages, contacts, etc will be re-added when you
+add the accounts back in the last step, so in typical situations you won't lose
+any data. You may want to write down which accounts you removed so you can add
+them back in the last step.
 
-Once the phone no longer has any Google accounts, you can proceed to the next
-step.
+Also, if you have other users on the device (e.g. a guest user), you need to
+remove them as well. To remove the guest user, you can switch to the guest user
+using the user menu, then when you go back to the user menu there will be a
+"Remove guest" button. See
+[this YouTube video](https://www.youtube.com/watch?v=gukHgDrq7ZA) for an example
+of how to manage users.
+
+Once the device no longer has any accounts or secondary users, you can move to
+the next step.
 
 ## 5. "Freeze" the app so it cannot be uninstalled
 
@@ -115,17 +125,18 @@ be uninstalled:
 adb shell dpm set-device-owner com.disablecamera/.AdminReceiver
 ~~~
 
-Once this step is done, the app will show a message saying that the camera is
-permanently disabled. If you try to uninstall the app, it will direct you to the
-device administrators page, which will not let you revoke permissions for the
-Permanently Disable Camera app.
+You should see a message saying "Success: Device owner set to package
+com.disablecamera". If you switch to the Permanently Disable Camera app, you
+should see a message saying that the camera is permanently disabled. If you try
+to uninstall the app, it will direct you to the device administrators page,
+which will not let you revoke permissions for the Permanently Disable Camera
+app.
 
-## 6. Add back all Google accounts to your Android device
+## 6. Add back all accounts to your Android device
 
-Go back to the Settings app, and go to the "Accounts" menu. For each Google
-account that you removed, tap "Add account" and then pick "Google" to add it
-back. All of your emails, messages, etc should be added back when the account
-syncs.
+Go back to the Settings app, and go to the "Accounts" menu. For each account
+that you removed, tap "Add account" and add back. All of your emails, messages,
+etc should be added back when the account syncs.
 
 That's it! If you've followed the steps correctly, your Android device should be
 just like before, but without a working camera. If you run into any problems,
