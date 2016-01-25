@@ -126,11 +126,13 @@ adb shell dpm set-device-owner com.disablecamera/.AdminReceiver
 ~~~
 
 You should see a message saying "Success: Device owner set to package
-com.disablecamera". If you switch to the Permanently Disable Camera app, you
-should see a message saying that the camera is permanently disabled. If you try
-to uninstall the app, it will direct you to the device administrators page,
-which will not let you revoke permissions for the Permanently Disable Camera
-app.
+com.disablecamera".
+
+Go back to the Permanently Disable Camera app. It may prompt you to disable the
+camera again, in which case you should do so. Then, you should see a message
+saying that the camera is permanently disabled. If you try to uninstall the app,
+it will direct you to the device administrators page, which will not let you
+revoke permissions for the Permanently Disable Camera app.
 
 ## 6. Add back all accounts to your Android device
 
