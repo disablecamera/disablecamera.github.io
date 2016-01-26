@@ -73,7 +73,10 @@ device admin receiver class instead of `.AdminReceiver`.
 shade?**
 
 The Android system always displays this message whenever there is a device owner
-app set, and there doesn't seem to be a way to remove it.
+app set, and there doesn't seem to be a way to remove it. The message warns
+about the *possibility* of monitoring, but the app does not do any monitoring;
+it only disables the camera. You can verify this by reading the
+[source code](https://github.com/disablecamera/disablecamera).
 
 **Q: Are there any known issues when the camera is disabled?**
 
