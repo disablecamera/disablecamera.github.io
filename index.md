@@ -4,19 +4,21 @@ title: Permanently Disable Camera
 ---
 
 **[Permanently Disable Camera](https://play.google.com/store/apps/details?id=com.disablecamera)**
-is an app for Android that disables the camera(s) on your Android
+is an app for Android 5.0 or later that disables the camera(s) on your Android
 phone or tablet. Unlike other camera-disabling apps
 ([Cameraless](https://play.google.com/store/apps/details?id=com.manyera.simplecameradisable),
  [Camera Block](https://play.google.com/store/apps/details?id=com.bettertomorrowapps.camerablockfree),
- [Camless](https://play.google.com/store/apps/details?id=com.lrodlor.camless),
-etc.), this app lets you disable the camera in a way that **cannot be reversed,
-not even by you**. See the [FAQ](/faq) for more information.
+ etc.), this app lets you disable the camera in a way that **cannot be reversed,
+not even by you**. It requires some manual setup steps, described below.
 
-The app will disable your camera (for all apps), but you'll need to take some
-additional manual steps to *permanently* disable it. Just follow the
-instructions below.
+See the [FAQ](/faq) for more information.
 
-# What you'll need
+# Instructions
+
+After you install the app and go through its steps to disable the camera, you'll
+need to go through a number of additional manual steps to make it permanent.
+
+You'll need:
 
 * An Android phone or tablet running Android 5.0 (Lollipop) or later.
 * A computer where you can install the Android developer tools.
@@ -34,9 +36,8 @@ app on the Play Store. Once the app is installed, follow the on-screen steps:
 
 At this point, the camera on your device will be disabled for all apps. However,
 you are still able to re-enable the camera by revoking the permissions you
-granted and uninstalling the app. If you want to "freeze" the app so that it is
-permanently installed (so that the camera is permanently disabled), then
-continue with these instructions.
+granted and uninstalling the app. If you want to "freeze" the app to permanently
+disable the camera, then continue with these instructions.
 
 # 2. Enable USB debugging on your Android device
 

@@ -95,9 +95,9 @@ Here are some common errors:
 
 `java.lang.IllegalStateException: Trying to set the device owner, but device owner is already set.`
 
-This error means that either the app is already permanently installed, or that
-there is already an app permanently installed. An Android device can only have
-one app permanently installed in this way.
+This error means that some app is already permanently installed (possibly
+Permanently Disable Camera, possibly some other app). An Android device can only
+have one app permanently installed in this way.
 
 `java.lang.IllegalStateException: Not allowed to set the device owner because there are already some accounts on the device`
 
