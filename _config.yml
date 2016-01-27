@@ -7,8 +7,9 @@
 
 # Site settings
 title: Permanently Disable Camera
-description: > # this means to ignore newlines until "baseurl:"
-  Android app to permanently disable the camera.
+description: >
+  Permanently Disable Camera is an app for Android 5.0 or later that disables
+  the camera(s) on your Android phone or tablet.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://disablecamera.com" # the base hostname & protocol for your site
 
