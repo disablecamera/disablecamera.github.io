@@ -131,9 +131,14 @@ com.disablecamera".
 
 Go back to the Permanently Disable Camera app. It may prompt you to disable the
 camera again, in which case you should do so. Then, you should see a message
-saying that the camera is permanently disabled. If you try to uninstall the app,
-it will direct you to the device administrators page, which will not let you
-revoke permissions for the Permanently Disable Camera app.
+saying that the camera is permanently disabled. Once you see this message, the
+app will also restrict your permissions so that you may not add other users and
+so that you may not use the settings option to factory reset the device (since
+both of these could be used to re-enable the camera).
+
+If you try to uninstall the app, it will direct you to the device administrators
+page, which will not let you revoke permissions for the Permanently Disable
+Camera app.
 
 ## 6. Add back all accounts to your Android device
 

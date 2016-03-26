@@ -17,7 +17,9 @@ This is almost as effective as physically destroying the cameras on the phone,
 although technically there are ways to use the camera again:
 
 * Reset the device to factory settings. This wipes all accounts, apps, and data
-  from the phone.
+  from the phone. However, note that the app disables the simple way of factory
+  resetting the device, and the more complicated way has not been tested with
+  the app.
 * If you've rooted your phone, you may be able to use root access to bypass the
   security restrictions and re-enable the camera.
 
@@ -54,6 +56,14 @@ camera, revoke the device administrator permissions for the app.
 
 There are also other apps on the Play Store that disable the camera temporarily,
 and some of them have more features.
+
+**Q: Why can't I add users after installing the app and following the
+instructions?**
+
+Android's mechanism for disabling the camera only disables it for the current
+user. That means that, if you could add other users, you could add a new user to
+effectively re-enable the camera. To stop this approach, the Permanently Disable
+Camera app restricts your permissions so that you cannot add other users.
 
 **Q: Can I use this approach to permanently install other apps?**
 
@@ -113,7 +123,8 @@ primary user. See step 4 in the [instructions](/) for more details.
 **Q: I changed my mind and want to un-disable the camera. Can you help with
 that?**
 
-Sorry, no. Your best option is probably to factory-reset your device.
+Sorry, no. Your best option is probably to do a full factory reset of your
+device, or to buy a new device.
 
 **Q: What if I have trouble with these instructions or have other questions or
 feedback?**
