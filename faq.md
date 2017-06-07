@@ -126,6 +126,10 @@ that?**
 Sorry, no. Your best option is probably to do a full factory reset of your
 device, or to buy a new device.
 
+**Q: Is there a privacy policy?**
+
+Yes. You can access it on the [privacy policy page](/privacy).
+
 **Q: What if I have trouble with these instructions or have other questions or
 feedback?**
 

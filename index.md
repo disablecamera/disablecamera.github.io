@@ -39,6 +39,11 @@ you are still able to re-enable the camera by revoking the permissions you
 granted and uninstalling the app. If you want to "freeze" the app to permanently
 disable the camera, then continue with these instructions.
 
+Note that after following the full instructions, the app will also apply two
+device policies that stop you from creating new users on the device or
+performing a factory reset from the settings menu. Both of these policies are
+needed to ensure that the cameras cannot be re-enabled.
+
 # 2. Enable USB debugging on your Android device
 
 This configures your Android device to allow you to send commands to it.
