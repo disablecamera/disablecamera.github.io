@@ -26,11 +26,21 @@ You'll need:
 
 # 1. Install the app and disable the camera
 
-Install the [Permanently Disable Camera](https://play.google.com/store/apps/details?id=com.disablecamera)
-app on the Play Store. Once the app is installed, follow the on-screen steps:
+There are two ways to install the app:
 
-1. Tap the "Grant permissions" button. The Android system will show an "Activate
-   device administrator?" screen, and you should tap "Activate".
+* Visit the [Google Play Store listing](https://play.google.com/store/apps/details?id=com.disablecamera)
+  for the app and install it from there.
+* If you can't install the app from the Play Store, you can instead click this
+  [direct download link](/downloads/permanently-disable-camera-1.2.apk) to
+  directly download the app as an APK file. You will likely need to change your
+  settings to allow apps from untrusted sources. See
+  [this article](https://www.howtogeek.com/313433/how-to-sideload-apps-on-android/)
+  for instructions on how to do that.
+
+Once the app is installed, follow the on-screen steps:
+
+1. Tap the "Grant device admin permission" button. The Android system will show
+   an "Activate device administrator?" screen, and you should tap "Activate".
 2. Tap the "Disable camera" button. This uses the granted permissions to disable
    the camera.
 
